@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@index');
+
+// controller => PostsController
+// Eloquent model => Post
+// migration => create_posts_table posts
+// This will make all three
+// php artisan make:model Post -mc
