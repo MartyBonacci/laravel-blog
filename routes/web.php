@@ -18,3 +18,5 @@ Route::get('/', 'PostsController@index');
 // migration => create_posts_table posts
 // This will make all three
 // php artisan make:model Post -mc
+
+Route::get('/posts/{post}', 'PostsController@show');
