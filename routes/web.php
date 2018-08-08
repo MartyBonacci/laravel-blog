@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PostController@index');
+Route::get('/', 'PostsController@index');
 
 // controller => PostsController
 // Eloquent model => Post
